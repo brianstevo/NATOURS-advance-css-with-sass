@@ -1,3 +1,4 @@
+/*section-about*/
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   margin: 0;
@@ -70,6 +71,14 @@ body {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards; }
 
+.fas,
+.far {
+  font-size: 6rem;
+  padding: 2rem 0;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(#7ed56f, #28b485); }
+
 .btn:link, .btn:visited {
   border-radius: 15rem;
   padding: 1rem 3rem;
@@ -112,13 +121,85 @@ body {
     z-index: -1;
     left: 0; }
 
+.btn-green:link, .btn-green:visited {
+  font-size: 1.6rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #28b485;
+  border-bottom: 0.1rem solid #7ed56f;
+  transition: all .2s ease; }
+
+.btn-green:hover {
+  background-color: #28b485;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-0.2rem); }
+
+.btn-green:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0.2rem); }
+
+.img-container {
+  position: relative; }
+  .img-container img {
+    width: 23rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+    transition: all .2s ease; }
+    .img-container img:hover {
+      transform: scale(1.2);
+      z-index: 2;
+      padding: 1rem;
+      border: 1rem solid #7ed56f; }
+  .img-container:hover img:not(:hover) {
+    transform: scale(0.95); }
+  .img-container .img1 {
+    position: absolute; }
+  .img-container .img2 {
+    position: absolute;
+    top: 6rem;
+    left: 30%; }
+  .img-container .img3 {
+    position: absolute;
+    left: 4rem;
+    top: 12rem; }
+
+.card-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 15vh 50px;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.7)), url("../img/nat-4.jpg");
+  background-position: top; }
+
+.card {
+  text-align: center;
+  padding: 0 3rem;
+  flex: 1 1 20%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 1rem 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: all .2s ease; }
+  .card h4 {
+    font-size: 1.7rem;
+    padding-bottom: 1.5rem;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #7ed56f, #28b485); }
+  .card p {
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    color: #777; }
+  .card:hover {
+    transform: translateY(-1.5rem) scale(1.03); }
+
 header {
   height: 90vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.7)), url("../img/hero.jpg");
   background-size: cover;
   position: relative;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   color: #fff; }
   header .logo-box {
     position: absolute;
@@ -126,3 +207,47 @@ header {
     left: 3rem; }
   header .logo {
     height: 4rem; }
+
+.features {
+  height: 50vh; }
+
+#section-about {
+  height: 100vh;
+  padding: 10rem 0 50rem 0;
+  background-color: #f7f7f7;
+  text-align: center; }
+  #section-about h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: transparent;
+    letter-spacing: .2rem;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    transition: all .2s ease;
+    margin-bottom: 3rem; }
+    #section-about h2:hover {
+      transform: skewY(3deg) skewX(-4deg);
+      text-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.2); }
+
+.section-container {
+  display: flex;
+  padding: 0 20px; }
+
+.container {
+  flex: 1 1 50%; }
+
+.block {
+  text-align: left;
+  padding: 0px 5rem; }
+  .block h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase; }
+  .block p {
+    margin-bottom: 2rem;
+    font-size: 1.6rem; }
+
+.link {
+  text-align: left;
+  padding-left: 5rem; }

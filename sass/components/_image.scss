@@ -1,0 +1,41 @@
+.img-container {
+    position: relative;
+
+    img {
+        width: 23rem;
+
+        box-shadow: 0 1.5rem 4rem rgba($color-black, $alpha: .5);
+        transition: all .2s ease;
+
+        &:hover {
+            transform: scale(1.2);
+            z-index: 2;
+            padding: 1rem;
+            border: 1rem solid $color-primary;
+        }
+
+
+    }
+
+    &:hover img:not(:hover) {
+        transform: scale(.95);
+    }
+
+
+
+    & .img1 {
+        position: absolute;
+    }
+
+    & .img2 {
+        position: absolute;
+        top: 6rem;
+        left: 30%;
+    }
+
+    & .img3 {
+        position: absolute;
+        left: 4rem;
+        top: 12rem;
+    }
+}
